@@ -1,6 +1,6 @@
 # Point-Cloud-Classification-and-Volume
 
-This project is divided in two parts: the python part, classifies point clouds with PointNet architecture and the C++ part, extracts and measures the volume of the point clouds with PCL and OpenCV.
+This project is divided in two parts: the Python part, classifies point clouds with PointNet architecture and the C++ part, extracts and measures the volume of the point clouds with PCL and OpenCV.
 
 This repository is composed by the code developed along my dissertation. The theme was " Polygon Classification and Volume estimation based in TOF point clouds", where theclassification task is performed by a Deep Learning architecture in Python and the remaining procedures used for measuring the polygon's volume were developed in C++. 
 
