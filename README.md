@@ -38,7 +38,7 @@ The individuals, which are scripts developed separatelly for later being include
 - cloud_disperse - moves the points away from its centre in the 3 axis directions
 
 The finals, which correspond to all the modules used in the dissertation execution.
-- cls_keras_train - which is responsible to train the PointNet architecture and generated a h5 file with the resulting weights after the training.
+- cls_keras_train - which is responsible to train the PointNet architecture, based in https://github.com/garyli1019/pointnet-keras and to generated a h5 file with the resulting weights after the training.
 - cls_keras_predict - contains a TCP server and the Deep Learning architecture, when it receives a message, it will read the point cloud and predict its class.
 - cls_preparation - reads the pcd files, stores them in Numpy arrays and generated h5 files which will be later used for the network train.
 - human_counter - contains the required code for the TOF sensor along with the methods developed to clean, measure and estimate the Polygon's volume.
