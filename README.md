@@ -36,7 +36,8 @@ The finals, which correspond to all the modules used in the dissertation executi
 The classification_weights.h5 is also available consisting in node weights, which correspond to the best performance achieved during the PointNet train.
 
 Multiple datasets were created in order to enhance the accuracy of the classification network and the polygons used were the following:
-** objects images
+![1](https://user-images.githubusercontent.com/39749315/68707811-623cd100-058a-11ea-9a65-dd881f4c4f69.JPG)
+
 All the C++ modules developed are intended to generate an executable and the results obtained can be seen in the images below.
 
 Results:
