@@ -1,4 +1,5 @@
 # Point-Cloud-Classification-and-Volume
+
 This project is divided in two parts: the python part, classifies point clouds with PointNet architecture and the C++ part, extracts and measures the volume of the point clouds with PCL and OpenCV.
 
 This repository is composed by the code developed along my dissertation. The theme was " Polygon Classification and Volume estimation based in TOF point clouds", where theclassification task is performed by a Deep Learning architecture in Python and the remaining procedures used for measuring the polygon's volume were developed in C++. The point cloud gathering was performed by Hitachi-LG's TOF sensor HLS L-FOM5.
@@ -11,11 +12,18 @@ In this work, 6 main tasks are performed:
 - Volume estimation using Slices;
 - Volume estimation using tetrahedrons.
 
+## Libraries
+
 To performe those tasks, the main libraries used were: 
 - PCL;
 - OpenCV;
 - H5PY;
-- Numpy
+- PyntCloud;
+- Numpy;
+- OS;
+- Keras;
+
+## Structure
 
 There are 2 main folders: 
 The individuals, which are scripts developed separatelly for later being included in the main module, some of them were not used in the final code, but may provide useful ideas and examples, containing:
@@ -33,31 +41,30 @@ The finals, which correspond to all the modules used in the dissertation executi
 - cls_preparation - reads the pcd files, stores them in Numpy arrays and generated h5 files which will be later used for the network train.
 - human_counter - contains the required code for the TOF sensor along with the methods developed to clean, measure and estimate the Polygon's volume.
 - cls_generator - takes the point clouds captured, cuts, transpose and rotates them in order to generate more point clouds and create a bigger dataset, which could provide better classification results.
-The classification_weights.h5 is also available consisting in node weights, which correspond to the best performance achieved during the PointNet train.
 
 Multiple datasets were created in order to enhance the accuracy of the classification network and the polygons used were the following:
 
 ![1](https://user-images.githubusercontent.com/39749315/68707811-623cd100-058a-11ea-9a65-dd881f4c4f69.JPG)
 
-All the C++ modules developed are intended to generate an executable and the results obtained can be seen in the images below.
+The classification_weights.h5 is also available consisting in node weights, which correspond to the best performance achieved during the PointNet train.
 
-Results:
+## Results:
 
-Classification:
+### Classification:
 
 ![2](https://user-images.githubusercontent.com/39749315/68708096-e8591780-058a-11ea-9c12-206a10f5b8ba.JPG)
 
-Volume:
+### Volume:
 
-Mesh:
+- Mesh:
 
 ![4](https://user-images.githubusercontent.com/39749315/68708102-eabb7180-058a-11ea-8124-abedd25c9a40.JPG)
 
-Slices:
+- Slices:
 
 ![5](https://user-images.githubusercontent.com/39749315/68708106-eb540800-058a-11ea-8d87-b8c2a541b9a8.JPG)
 
-- The Mesh algorithm generates a volume prediction in 6 seconds and the Slices algorithm processes only in 2 seconds.
+The Mesh algorithm generates a volume prediction in 6 seconds and the Slices algorithm processes only in 2 seconds.
 
 This repository is also useful for PCL begginers with implementation examples of:
 - Statistical Outlier Removal;
@@ -71,3 +78,5 @@ This repository is also useful for PCL begginers with implementation examples of
 - Conditional Removal.
 
 Which can serve as useful examples for teaching how to use other functions of the open source library.
+
+All the C++ modules developed are intended to generate an executable and the results obtained can be seen in the images below.
