@@ -44,11 +44,20 @@ All the C++ modules developed are intended to generate an executable and the res
 Results:
 
 Classification:
-- 70% of the objects were correctly detected and is able to distinguish the same shape but with different sizes.
+
+![2](https://user-images.githubusercontent.com/39749315/68708096-e8591780-058a-11ea-9c12-206a10f5b8ba.JPG)
 
 Volume:
-- Mesh volume can measure volume values really close to the real one, however the mesh generated is not the best approximation and it takes 6 seconds to generate a volume estimation.
-- Slices volume has an equal performance regarding the volume estimated with close volume values and it only takes 2 seconds process.
+
+Mesh:
+
+![4](https://user-images.githubusercontent.com/39749315/68708102-eabb7180-058a-11ea-8124-abedd25c9a40.JPG)
+
+Slices:
+
+![5](https://user-images.githubusercontent.com/39749315/68708106-eb540800-058a-11ea-8d87-b8c2a541b9a8.JPG)
+
+- The Mesh algorithm generates a volume prediction in 6 seconds and the Slices algorithm processes only in 2 seconds.
 
 This repository is also useful for PCL begginers with implementation examples of:
 - Statistical Outlier Removal;
