@@ -61,11 +61,11 @@ It was detected that the network is also capable of correctly classify objects w
 
 ### Volume:
 
-- Mesh:
+- #### Mesh:
 
 ![4](https://user-images.githubusercontent.com/39749315/68708102-eabb7180-058a-11ea-8124-abedd25c9a40.JPG)
 
-- Slices:
+- #### Slices:
 
 ![5](https://user-images.githubusercontent.com/39749315/68708106-eb540800-058a-11ea-8d87-b8c2a541b9a8.JPG)
 
@@ -85,5 +85,6 @@ This repository is also useful for PCL begginers with implementation examples of
 - Conditional Removal.
 
 Which can serve as useful examples for teaching how to use other functions of the open source library.
+
 A CMake file is also available for the possible need of generating an executable.
 
