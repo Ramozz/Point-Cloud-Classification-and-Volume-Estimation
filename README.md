@@ -88,5 +88,5 @@ This repository is also useful for PCL begginers with implementation examples of
 
 Which can serve as useful examples for teaching how to use other functions of the open source library.
 
-A CMake file is also available for the possible need of generating an executable.
+A CMakeList file is also available for the possible need of generating an executable, along with .ini files required to start the HumanCounter and tof libraries for the HLS L-FOM5 sensor.
 
