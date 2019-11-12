@@ -25,7 +25,7 @@ To performe those tasks, the main libraries used were:
 
 ## Structure
 
-There are 2 main folders: 
+There are 2 main sections: 
 The individuals, which are scripts developed separatelly for later being included in the main module, some of them were not used in the final code, but may provide useful ideas and examples, containing:
 - cloud_remove - contains the functions for extracting the polygon's points from the surronding environment
 - cloud_volume - initial prototype for extracting the polygon and volume estimation
@@ -54,6 +54,11 @@ The classification_weights.h5 is also available consisting in node weights, whic
 
 ![2](https://user-images.githubusercontent.com/39749315/68708096-e8591780-058a-11ea-9c12-206a10f5b8ba.JPG)
 
+The worst values obtained in the classification were due to the color of the small Cube, whose dark characteristics difficult the reflection of the light beam and consequently, a bad point cloud reconstruction. The other reason is the proximity to the ground along the whole prototype development, which resulted in a difficulty to separete and identify small objects from the ground.
+
+It was detected that the network is also capable of correctly classify objects with different sizes of the ones used for training.
+
+
 ### Volume:
 
 - Mesh:
@@ -65,6 +70,8 @@ The classification_weights.h5 is also available consisting in node weights, whic
 ![5](https://user-images.githubusercontent.com/39749315/68708106-eb540800-058a-11ea-8d87-b8c2a541b9a8.JPG)
 
 The Mesh algorithm generates a volume prediction in 6 seconds and the Slices algorithm processes only in 2 seconds.
+
+## Final considerations
 
 This repository is also useful for PCL begginers with implementation examples of:
 - Statistical Outlier Removal;
@@ -78,5 +85,5 @@ This repository is also useful for PCL begginers with implementation examples of
 - Conditional Removal.
 
 Which can serve as useful examples for teaching how to use other functions of the open source library.
+A CMake file is also available for the possible need of generating an executable.
 
-All the C++ modules developed are intended to generate an executable and the results obtained can be seen in the images below.
