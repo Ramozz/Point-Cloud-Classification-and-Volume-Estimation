@@ -21,19 +21,19 @@ To performe those tasks, the main libraries used were:
 - PyntCloud;
 - Numpy;
 - OS;
-- Keras;
+- Keras.
 
 ## Structure
 
 There are 2 main sections: 
 The individuals, which are scripts developed separatelly for later being included in the main module, some of them were not used in the final code, but may provide useful ideas and examples, containing:
-- cloud_remove - contains the functions for extracting the polygon's points from the surronding environment
-- cloud_volume - initial prototype for extracting the polygon and volume estimation
-- cloud_viewer - reads a pcd file a displays on the screen
-- cloud_2048 - cuts to fit the analysis square and removes the less important points until only remain 2048 points
-- cloud_20482 - second approach to reduce the point cloud to only 2048 points 
-- cloud_voxel - example how to create a voxel grid
-- cloud_disperse - moves the points away from its centre in the 3 axis directions
+- cloud_remove - contains the functions for extracting the polygon's points from the surronding environment.
+- cloud_volume - initial prototype for extracting the polygon and volume estimation.
+- cloud_viewer - reads a pcd file a displays on the screen.
+- cloud_2048 - cuts to fit the analysis square and removes the less important points until only remain 2048 points.
+- cloud_20482 - second approach to reduce the point cloud to only 2048 points.
+- cloud_voxel - example how to create a voxel grid.
+- cloud_disperse - moves the points away from its centre in the 3 axis directions.
 
 The finals, which correspond to all the modules used in the dissertation execution.
 - cls_keras_train - which is responsible to train the PointNet architecture, based in https://github.com/garyli1019/pointnet-keras and to generated a h5 file with the resulting weights after the training.
