@@ -54,7 +54,7 @@ The classification_weights.h5 is also available consisting in node weights, whic
 
 ![2](https://user-images.githubusercontent.com/39749315/68708096-e8591780-058a-11ea-9c12-206a10f5b8ba.JPG)
 
-The worst values obtained in the classification were due to the color of the small Cube, whose dark characteristics difficult the reflection of the light beam and consequently, a bad point cloud reconstruction. The other reason is the proximity to the ground along the whole prototype development, which resulted in a difficulty to separete and identify small objects from the ground.
+The worst values obtained in the classification were due to the color of the small Cube, whose dark characteristics difficult the reflection of the light beam and consequently, a bad point cloud reconstruction. The other reason is the proximity to the ground along the whole prototype development, which resulted in a difficulty to separate and identify small objects from the ground.
 
 It was detected that the network is also capable of correctly classify objects with different sizes of the ones used for training.
 
